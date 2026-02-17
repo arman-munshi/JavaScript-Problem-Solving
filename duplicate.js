@@ -20,3 +20,24 @@ function noDuplicate(array) {
 
 const uniqueArray = noDuplicate(number);
 console.log(uniqueArray)
+
+
+//---------------------------------
+
+//find duplicate and count them ,
+function countOccurrences(numbers, find) {
+    let count = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === find) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+
+console.log(countOccurrences([5, 6, 11, 12, 98, 5], 5));
+console.log(countOccurrences([5, 6, 11, 12, 98, 5], 25));
+
